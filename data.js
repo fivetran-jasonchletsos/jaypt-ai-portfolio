@@ -1,4 +1,4 @@
-const COLLECTIONS = ["Motion", "The Joyride", "The Last Supper in Bricks", "Serpent and Bloom", "By the Sea", "Periwinkle Braids", "Dice and Totem", "Color and Form"];
+const COLLECTIONS = ["Motion", "Rorschach", "Fantasy Portraits", "Ink and Neon", "Veiled Skulls", "The Joyride", "The Last Supper in Bricks", "Serpent and Bloom", "By the Sea", "Periwinkle Braids", "Dice and Totem", "Color and Form"];
 const WORKS = [
  {
   "id": "spotlight-gown",
@@ -368,5 +368,203 @@ const WORKS = [
   "thumb": "thumbs/flower-headed-guardian-at-the-cross.jpg",
   "collection": "Color and Form",
   "date": "2026-11-08"
+ },
+ {
+  "id": "dragon-gown",
+  "type": "image",
+  "title": "Dragon Gown",
+  "file": "media/dragon-gown.jpg",
+  "thumb": "thumbs/dragon-gown.jpg",
+  "collection": "Fantasy Portraits",
+  "date": "2026-11-06"
+ },
+ {
+  "id": "neon-ink-study",
+  "type": "image",
+  "title": "Neon Ink Study",
+  "file": "media/neon-ink-study.jpg",
+  "thumb": "thumbs/neon-ink-study.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "crimson-scream",
+  "type": "image",
+  "title": "Crimson Scream",
+  "file": "media/crimson-scream.jpg",
+  "thumb": "thumbs/crimson-scream.jpg",
+  "collection": "Rorschach",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "web-mask",
+  "type": "image",
+  "title": "Web Mask",
+  "file": "media/web-mask.jpg",
+  "thumb": "thumbs/web-mask.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "red-room",
+  "type": "image",
+  "title": "Red Room",
+  "file": "media/red-room.jpg",
+  "thumb": "thumbs/red-room.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "gold-leaf",
+  "type": "image",
+  "title": "Gold Leaf",
+  "file": "media/gold-leaf.jpg",
+  "thumb": "thumbs/gold-leaf.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "silver-lace",
+  "type": "image",
+  "title": "Silver Lace",
+  "file": "media/silver-lace.jpg",
+  "thumb": "thumbs/silver-lace.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "rorschach-skull",
+  "type": "image",
+  "title": "Rorschach Skull",
+  "file": "media/rorschach-skull.jpg",
+  "thumb": "thumbs/rorschach-skull.jpg",
+  "collection": "Rorschach",
+  "date": "2026-10-19"
+ },
+ {
+  "id": "pastel-grin",
+  "type": "image",
+  "title": "Pastel Grin",
+  "file": "media/pastel-grin.jpg",
+  "thumb": "thumbs/pastel-grin.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "wildflower-bride",
+  "type": "image",
+  "title": "Wildflower Bride",
+  "file": "media/wildflower-bride.jpg",
+  "thumb": "thumbs/wildflower-bride.jpg",
+  "collection": "Fantasy Portraits",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-i",
+  "type": "image",
+  "title": "Veiled Skull I",
+  "file": "media/veiled-skull-i.jpg",
+  "thumb": "thumbs/veiled-skull-i.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-ii",
+  "type": "image",
+  "title": "Veiled Skull II",
+  "file": "media/veiled-skull-ii.jpg",
+  "thumb": "thumbs/veiled-skull-ii.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-iii",
+  "type": "image",
+  "title": "Veiled Skull III",
+  "file": "media/veiled-skull-iii.jpg",
+  "thumb": "thumbs/veiled-skull-iii.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-iv",
+  "type": "image",
+  "title": "Veiled Skull IV",
+  "file": "media/veiled-skull-iv.jpg",
+  "thumb": "thumbs/veiled-skull-iv.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-v",
+  "type": "image",
+  "title": "Veiled Skull V",
+  "file": "media/veiled-skull-v.jpg",
+  "thumb": "thumbs/veiled-skull-v.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-vi",
+  "type": "image",
+  "title": "Veiled Skull VI",
+  "file": "media/veiled-skull-vi.jpg",
+  "thumb": "thumbs/veiled-skull-vi.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "veiled-skull-vii",
+  "type": "image",
+  "title": "Veiled Skull VII",
+  "file": "media/veiled-skull-vii.jpg",
+  "thumb": "thumbs/veiled-skull-vii.jpg",
+  "collection": "Veiled Skulls",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "laughing-in-bloom",
+  "type": "image",
+  "title": "Laughing in Bloom",
+  "file": "media/laughing-in-bloom.jpg",
+  "thumb": "thumbs/laughing-in-bloom.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "rainbow-braid",
+  "type": "image",
+  "title": "Rainbow Braid",
+  "file": "media/rainbow-braid.jpg",
+  "thumb": "thumbs/rainbow-braid.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "peacock-polaroids",
+  "type": "image",
+  "title": "Peacock Polaroids",
+  "file": "media/peacock-polaroids.jpg",
+  "thumb": "thumbs/peacock-polaroids.jpg",
+  "collection": "Fantasy Portraits",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "neon-symbiote",
+  "type": "image",
+  "title": "Neon Symbiote",
+  "file": "media/neon-symbiote.jpg",
+  "thumb": "thumbs/neon-symbiote.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-18"
+ },
+ {
+  "id": "monochrome-ember",
+  "type": "image",
+  "title": "Monochrome Ember",
+  "file": "media/monochrome-ember.jpg",
+  "thumb": "thumbs/monochrome-ember.jpg",
+  "collection": "Ink and Neon",
+  "date": "2026-10-18"
  }
 ];
