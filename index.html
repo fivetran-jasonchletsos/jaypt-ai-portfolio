@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jaypt.ai: cinematic AI art and video</title>
+<meta name="description" content="Portfolio of jaypt.ai. Cinematic AI video and still artwork you can search, filter, download, and share.">
+<meta property="og:title" content="jaypt.ai portfolio">
+<meta property="og:description" content="Cinematic AI video and artwork. Search, filter, download, and share.">
+<meta property="og:image" content="thumbs/spotlight-gown.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#" class="brand">jaypt.ai</a>
+  <a class="ig" href="https://www.instagram.com/jaypt.ai/" target="_blank" rel="noopener">Follow on Instagram</a>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Cinematic AI <em>video and art.</em></h1>
+    <p class="lede">Everything here can be searched, filtered, downloaded, and shared with a direct link. Open any piece to see it full size.</p>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="tools" aria-label="Find work">
+    <label class="search"><span class="sr">Search</span><input id="q" type="search" placeholder="Search titles, for example snake, car, glass" autocomplete="off"></label>
+    <div class="row" role="group" aria-label="Type">
+      <button type="button" class="chip on" data-type="all">All</button>
+      <button type="button" class="chip" data-type="video">Videos</button>
+      <button type="button" class="chip" data-type="image">Images</button>
+      <label class="sort"><span class="sr">Sort</span>
+        <select id="sort"><option value="new">Newest first</option><option value="az">A to Z</option></select></label>
+    </div>
+    <div class="row" id="colls" role="group" aria-label="Collections"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+  </section>
+
+  <section aria-label="Work"><div class="grid" id="grid"></div></section>
+</main>
+
+<footer>
+  <p>Some pieces are fan art of existing characters and are not affiliated with or endorsed by their owners. All artwork on this page is by jaypt.ai.</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Viewer" hidden>
+  <div class="lbtop">
+    <button type="button" id="prev">Previous</button>
+    <button type="button" id="next">Next</button>
+    <button type="button" id="close" class="primary">Close</button>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="meta">
+    <h2 id="mt"></h2>
+    <p id="ms"></p>
+    <div class="acts">
+      <a id="dl" class="btn" href="#" download>Download</a>
+      <button type="button" id="copylink">Copy link</button>
+      <button type="button" id="copyimg">Copy image</button>
+      <button type="button" id="share">Share</button>
+    </div>
+    <p id="st" class="status" aria-live="polite"></p>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
