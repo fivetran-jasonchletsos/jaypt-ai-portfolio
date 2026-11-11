@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/sitemap.xml

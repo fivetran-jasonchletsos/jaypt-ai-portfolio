@@ -2,52 +2,95 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>jaypt.ai: cinematic AI art and video</title>
 <meta name="description" content="Portfolio of jaypt.ai. Cinematic AI video and still artwork you can search, filter, download, and share.">
-<meta property="og:title" content="jaypt.ai portfolio">
+<link rel="canonical" href="https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/">
+<meta name="theme-color" content="#0b0b0e">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="jaypt.ai">
+<meta property="og:url" content="https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/">
+<meta property="og:title" content="jaypt.ai: cinematic AI art and video">
 <meta property="og:description" content="Cinematic AI video and artwork. Search, filter, download, and share.">
-<meta property="og:image" content="thumbs/spotlight-gown.jpg">
+<meta property="og:image" content="https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/social-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/social-card.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c8a6ff'/%3E%3Cstop offset='1' stop-color='%23ff7ad9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0e'/%3E%3Ccircle cx='32' cy='32' r='20' fill='url(%23g)'/%3E%3Cpath d='M27 24l14 8-14 8z' fill='%230b0b0e'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"jaypt.ai portfolio","url":"https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/","description":"Cinematic AI video and still artwork.","image":"https://fivetran-jasonchletsos.github.io/jaypt-ai-portfolio/social-card.jpg","inLanguage":"en","about":{"@type":"CreativeWorkSeries","name":"jaypt.ai","sameAs":["https://www.instagram.com/jaypt.ai/"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,500&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,500&family=Inter:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,500&family=Inter:wght@400;500;700&display=swap"></noscript>
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+<a class="skip" href="#work">Skip to the work</a>
 <header class="top">
-  <a href="#" class="brand">jaypt.ai</a>
-  <a class="ig" href="https://www.instagram.com/jaypt.ai/" target="_blank" rel="noopener">Follow on Instagram</a>
+  <a href="./" class="brand">jaypt.ai</a>
+  <a class="ig" href="https://www.instagram.com/jaypt.ai/" target="_blank" rel="noopener" aria-label="Follow on Instagram, opens in a new tab">Follow on Instagram</a>
 </header>
 
-<main>
-  <section class="hero">
-    <p class="eyebrow">Portfolio</p>
-    <h1>Cinematic AI <em>video and art.</em></h1>
-    <p class="lede">Everything here can be searched, filtered, downloaded, and shared with a direct link. Open any piece to see it full size.</p>
-    <div class="stats" id="stats"></div>
+<main id="main">
+  <section class="hero" id="hero">
+    <video id="heroVid" class="hero-media" src="media/spotlight-gown.mp4" poster="thumbs/spotlight-gown.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">jaypt.ai</p>
+      <h1>Worlds in <em>motion and color.</em></h1>
+      <p class="lede">Short AI films and still images, built from light, texture, and strange characters. Search the work, filter by type or collection, open any piece full size, and share it with a direct link.</p>
+      <div class="cta">
+        <button type="button" id="heroPlay" class="btn">Watch Spotlight Gown</button>
+        <a class="ghost" href="#work">Browse all work</a>
+        <a class="ghost" href="https://www.instagram.com/jaypt.ai/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
   </section>
 
-  <section class="tools" aria-label="Find work">
-    <label class="search"><span class="sr">Search</span><input id="q" type="search" placeholder="Search titles, for example snake, car, glass" autocomplete="off"></label>
+  <section class="strip" aria-labelledby="fh"><h2 id="fh">Featured</h2><div class="rail" id="rail"></div></section>
+
+  <section class="about" aria-labelledby="ah">
+    <h2 id="ah">About this work</h2>
+    <p>The pieces here move between short video and stills. The look runs from dark, glittering stage scenes and glowing-eyed figures to veiled skull portraits, neon ink, and costumed fantasy figures. Some pieces borrow existing characters as fan art.</p>
+  </section>
+
+  <section class="tools" aria-label="Find work" id="work">
+    <label class="search"><span class="sr">Search</span><input id="q" type="search" placeholder="Search titles, tags, descriptions. Press / to jump here." autocomplete="off"></label>
     <div class="row" role="group" aria-label="Type">
       <button type="button" class="chip on" data-type="all">All</button>
       <button type="button" class="chip" data-type="video">Videos</button>
       <button type="button" class="chip" data-type="image">Images</button>
-      <label class="sort"><span class="sr">Sort</span>
-        <select id="sort"><option value="new">Newest first</option><option value="az">A to Z</option></select></label>
+      <button type="button" class="chip" id="surprise">Surprise me</button>
+      <label class="sort"><span class="sr">Sort</span><select id="sort"></select></label>
     </div>
     <div class="row" id="colls" role="group" aria-label="Collections"></div>
-    <p class="count" id="count" aria-live="polite"></p>
+    <div class="row" id="tags" role="group" aria-label="Tags" hidden></div>
+    <div class="row"><p class="count" id="count" role="status" aria-atomic="true"></p><button type="button" id="clear" class="chip" hidden>Clear filters</button></div>
+    <p class="blurb" id="blurb"></p>
   </section>
 
-  <section aria-label="Work"><div class="grid" id="grid"></div></section>
+  <section aria-label="Work">
+    <h2 class="sr">All work</h2>
+    <div class="grid" id="grid"></div>
+    <div id="empty" class="empty" hidden><p>Nothing matches that search.</p><p>Try a shorter word, or clear the filters to see everything.</p><button type="button" id="emptyclear" class="chip">Clear filters</button></div>
+  </section>
 </main>
 
 <footer>
+  <div class="foot">
+    <a href="./" class="brand">jaypt.ai</a>
+    <nav aria-label="Footer"><a href="https://www.instagram.com/jaypt.ai/" target="_blank" rel="noopener">Instagram</a><a href="#work">Back to the work</a></nav>
+  </div>
   <p>Some pieces are fan art of existing characters and are not affiliated with or endorsed by their owners. All artwork on this page is by jaypt.ai.</p>
 </footer>
 
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Viewer" hidden>
+<button type="button" id="up" class="up" aria-label="Back to top" hidden>Top</button>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-labelledby="mt" tabindex="-1" hidden>
+  <p id="lbann" class="sr" role="status" aria-live="polite"></p>
   <div class="lbtop">
     <button type="button" id="prev">Previous</button>
     <button type="button" id="next">Next</button>
@@ -57,17 +100,21 @@
   <div class="meta">
     <h2 id="mt"></h2>
     <p id="ms"></p>
+    <p id="md" class="md"></p>
+    <div class="row tagrow" id="mtags"></div>
     <div class="acts">
       <a id="dl" class="btn" href="#" download>Download</a>
+      <a id="full" class="btn alt" href="#" target="_blank" rel="noopener">Open full size</a>
       <button type="button" id="copylink">Copy link</button>
       <button type="button" id="copyimg">Copy image</button>
+      <button type="button" id="copycap">Copy caption and tags</button>
       <button type="button" id="share">Share</button>
     </div>
     <p id="st" class="status" aria-live="polite"></p>
   </div>
 </div>
 
-<script src="data.js"></script>
-<script src="app.js"></script>
+<script src="data.js?v=3" defer></script>
+<script src="app.js?v=3" defer></script>
 </body>
 </html>
